@@ -292,7 +292,7 @@ stages:
                 sudo cp $(Pipeline.Workspace)/drop-uitests/log/selenium/selenium.log /var/log/selenium.log
                 
           - task: PublishPipelineArtifact@1
-            displayName: Publish Selenium Log
+            displayName: Publish Selenium Logs
             inputs:
               targetPath: '$(Pipeline.Workspace)/drop-uitests/log/selenium/selenium.log'
               artifactName: 'drop-selenium-logs'
